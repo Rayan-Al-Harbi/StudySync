@@ -4,6 +4,7 @@ import { db } from "@/lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
 import { Task, Course, User, CourseMember } from "@shared/schema";
 import { TaskCard } from "@/components/TaskCard";
+import { CompletedTasksChart } from "@/components/CompletedTasksChart";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Plus, Calendar, CheckCircle2, Clock, Users, BookOpen } from "lucide-react";
@@ -130,6 +131,8 @@ export default function Dashboard({
           </CardContent>
         </Card>
       </div>
+
+      <CompletedTasksChart tasks={tasks} courses={courses} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-4">
