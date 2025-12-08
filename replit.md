@@ -52,10 +52,17 @@ Users need to configure Firebase Security Rules in the Firebase Console to enabl
 - Course-based task organization
 - Real-time task synchronization across all users
 - Task management with priorities, due dates, and assignments
+- Data visualization of completed tasks per course (stacked bar chart)
 - Filtering and sorting capabilities
 - Responsive design for mobile and desktop
 
 ## Recent Changes
+- **2024-12-08**: Added data visualization feature
+  - Created CompletedTasksChart component with stacked bar chart
+  - Shows completed vs pending tasks per course
+  - Displays overall completion rate percentage
+  - Integrated into dashboard page using recharts library
+
 - **2024-12-08**: Initial Replit setup
   - Configured Vite for Replit proxy (host: 0.0.0.0, port: 5000)
   - Added Firebase environment variables
