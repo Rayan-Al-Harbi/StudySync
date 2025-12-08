@@ -2,9 +2,89 @@
 
 A full-stack web application for university students to create shared, course-based task lists with real-time synchronization using Firebase.
 
+
+# **Setup Instructions**
+
+You can access the live demo here:
+**[https://study-sync-mbk3.onrender.com](https://study-sync-mbk3.onrender.com)**
+
+To run the project locally, follow the steps below.
+
+
+## **1. Prerequisites**
+
+Make sure you have the following installed:
+
+* **Node.js v18+**
+* **npm**
+* **Firebase project** with:
+
+  * Email/Password Authentication enabled
+  * Firestore database enabled
+
+
+## **2. Installation**
+
+Clone the repository:
+
+```bash
+git clone https://github.com/EccentricRay/StudySync.git
+```
+
+Navigate into the project folder:
+
+```bash
+cd StudySync
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+
+
+## **3. Environment Configuration**
+
+Create a `.env` file in the project root and add your Firebase configuration:
+
+```
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+
+# Optional (default: 5000)
+PORT=5000
+```
+
+Ensure each field corresponds to your Firebase project settings.
+
+
+
+## **4. Running the Development Server**
+
+Start the development server:
+
+```bash
+npm run dev
+
+
+Then open the app at:
+
+```
+http://localhost:PORT
+
+
+If `PORT` is not set, it defaults to **5000**.
+
+
 ## Features
 
-✨ **Core Features:**
+**Core Features:**
 - User authentication with email verification
 - Course-based task organization
 - Real-time task synchronization across all users
@@ -12,7 +92,7 @@ A full-stack web application for university students to create shared, course-ba
 - Filtering and sorting capabilities
 - Responsive design for mobile and desktop
 
-🎯 **Task Management:**
+**Task Management:**
 - Create, edit, and delete tasks
 - Mark tasks as complete/pending
 - Assign tasks to course members
@@ -20,7 +100,7 @@ A full-stack web application for university students to create shared, course-ba
 - Add due dates with overdue indicators
 - Add optional descriptions
 
-📚 **Course Organization:**
+**Course Organization:**
 - Create multiple courses
 - Automatic course member management
 - Task counts per course
