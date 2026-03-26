@@ -5,9 +5,6 @@ A full-stack web application for university students to create shared, course-ba
 
 # **Setup Instructions**
 
-You can access the live demo here:
-**[https://study-sync-mbk3.onrender.com](https://study-sync-mbk3.onrender.com)**
-
 To run the project locally, follow the steps below.
 
 
